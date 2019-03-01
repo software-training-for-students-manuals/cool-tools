@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+    <!-- 
+WELCOME USER! You've reached the source code for a manual created by STS. If you plan on updating or editing this manual, then you're in the right place!
+
+Before editing this manual, please read through the manual editing guide at https://sts.doit.wisc.edu/manuals/manual-editing-guide/ and follow its recommendations. It is important that we adhere to the conventions set in the guide in order to maintain quality and consistency across all manuals.
+
+A few things to note:
+
+* In order to have a working preview with accurate CSS and functional JavaScript, you will need a copy of the /master-files folder in the same parent directory as the folder with your manual editing files in it, e.g. if you have a folder on your desktop "STS Manuals", and you're editing the Excel 1 manual in the "excel1" folder and the Photoshop 1 folder in the "photoshop1" folder, you will need to have the "master-files" folder in "STS Manuals" as well, since the manual files link to the CSS/Javascript using relative links. Your folder will look like this: 
+
+├STS Manuals 
+├╴╴excel1
+├╴╴╴╴╴images
+├╴╴╴╴╴class_files
+├╴╴master-files
+├╴╴photoshop1
+├╴╴╴╴╴images
+├╴╴╴╴╴class_files
+
+
+* Manuals should be arranged into Topics, which are enclosed in the <section class="topic"> tag, and followed immediately by an <h1> tag with the topic name in it, e.g.
+
+<section class="topic">
+</section>
+<section class="topic">
+<h1>Topic name</h1>
+<p>Neat and helpful information goes here</p>
+</section>
+
+The <section class="topic"> and following <h1> element are how the manual's JavaScript automagically builds the Topics outline and creates the links, so if they are not there, the manual will be without a table of contents and its friends will probably make fun of it (which is decidedly not cool).
+
+* Unless you are changing the contents of the <title></title> tag, you should not have to touch the <head> portion of this document (unless instructed to do so). This tag connects the HTML to the CSS and JavaScript that keep the manual functioning. Look for the comment tag that says "MAIN CONTENT", and you may edit there.
+
+
+Good luck, and have fun!
+
+-->
+
+    <head>
+
+        <!-- Manual title -->
+        <title>Cool Tools</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Software manual provided by Software Training for Students at the University of Wisconsin.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' id='uwmadison-fonts-css' href='https://brand.wisc.edu/content/themes/uw-theme/dist/fonts/uw160/fonts.css?ver=1.1.1' type='text/css' media='all' />
+        <link rel="stylesheet" type="text/css" href="../master-files/css/stylesheet.css">
+        <script src="../master-files/highlight.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="../master-files/smooth-scroll.js"></script>
+        <script src="../master-files/primary-functions.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4370707-17"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-4370707-17');
+
+        </script>
+
+
+    </head>
+
+    <body>
+        <!-- begin front page -->
+        <div class="manual-front-page">
+            <div id="coverpage-title">
+                <h1>Cool Tools</h1>
+                <h2>Tips, Tools, and Services to Help You Succeed</h2>
+            </div>
+            <div id="about-page"></div>
+            <div id="outline"></div>
+            <!--            <a id="back-to-topics-sticky" href="#outline">Back to Topics</a>-->
+        </div>
+
+        <section class="topic">
+            <h1>Introduction</h1>
+            <p>The huge variety of resources available to you as a student of UW-Madison is one of the best things about being here. It's also one of the biggest challenges! Keeping up with your course work is hard enough, let alone staying current with all of the different services, tools, and technologies that are available to you as a student. </p>
+            <p>This list is just a handful of the tools, services, and offerings that can help you succeed in your time at UW-Madison. It includes both UW-Madison specific services and tools as well as others that may not be officially supported by DoIT.</p>
+            <h2>Browser Extensions</h2>
+            <p>Many of the tools in this guide offer <em>browser extensions</em> to provide their features and functionality. These are small bits of software that you can install in your web browser of choice (e.g. Chrome, Firefox, Safari) that enable extra functionality beyond the default browser experience.</p>
+            <p>These are usually free of charge, are straightforward to install, and can be found via internet search or by browsing the extension galleries for each respective browser:</p>
+<ul>
+    <li><a href="https://chrome.google.com/webstore/category/extensions" target="_blank">Chrome Web Store</a></li>
+    <li><a href="https://addons.mozilla.org/" target="_blank">Firefox Add-Ons</a></li>
+    <li><a href="https://safari-extensions.apple.com" target="_blank">Safari Extensions Gallery</a></li>
+</ul>
+       <div class="important center">
+       <p>It's best to avoid installing browser extensions from anywhere other than the official collections. It is possible for unscrupulous people and companies to add malware, trackers, and other harmful code to browser extensions that come from external sources.</p>
+       <p>The official repositories monitor extensions for this type of malware, but untrusted, unofficial sources may not - they may even add their own!</p>
+       </div>
+        </section>
+        <section class="topic">
+            <h1>UW-Madison Web Resources</h1>
+            <h2>UW-Madison IT Home Page</h2>
+            <p><a href="http://it.wisc.edu" target="blank">http://it.wisc.edu</a></p>
+
+            <p>A great place to start when trying to figure out how to do something technology related on campus.</p>
+            <a href="http://it.wisc.edu" target="blank"><img class="border rounded shadow" src="images/01-UW-homepage.png" alt="Screenshot of the UW-Madison website Homepage"></a>
+
+            <hr>
+            <h2>UW-Madison Knowledge Base</h2>
+            <p><a href="http://kb.wisc.edu" target="blank">http://kb.wisc.edu</a></p>
+
+
+            <p>The Knowledge Base houses documents explaining how to do all kinds of tech-related things on campus (set up Office 365 on your phone/tablet, connect to Housing printers, etc.). It can sometimes be a little hard to find exactly what you are looking for, but it is a comprehensive resource of technical know-how.</p>
+            <a href="http://kb.wisc.edu" target="blank">
+                <div class="two-up lightbox" rounded>
+                    <img class="rounded shadow" src="images/02-knowledgebase.png" alt="Screenshot of the UW-Madison Knowledge Base website">
+                    <img class="border shadow rounded" src="images/02a-knowledgebase.png" alt="UW Knowledge Base search results">
+                </div>
+            </a>
+
+
+            <hr>
+            <h2>DoIT Help Desk</h2>
+            <p><a href="http://helpdesk.wisc.edu" target="blank">http://helpdesk.wisc.edu</a></p>
+
+            <p>The DoIT Help Desk is a great way to get help setting up your devices, fixing and troubleshooting hardware and software problems and getting service for devices under warranty.</p>
+            <a href="http://helpdesk.wisc.edu" target="blank"><img class="shadow rounded border" src="images/03-doit-helpdesk.png" alt="Screenshot of the DoIT Help Desk"></a>
+            <p>Help is available a variety of ways:</p>
+            <ul>
+                <li>Phone: 264-4357 (264-HELP)</li>
+                <li>Email: <a href="mailto:help@doit.wisc.edu">help@doit.wisc.edu</a></li>
+                <li>Chat: <a href="https://kb.wisc.edu/helpdesk/page.php?id=6454" target="_blank">https://kb.wisc.edu/helpdesk/page.php?id=6454</a></li>
+                <li>Walk-Up support at the <a href="https://kb.wisc.edu/helpdesk/page.php?id=1#wihd" target="_blank">DoIT Tech Store locations</a></li>
+            </ul>
+            <hr>
+            <h2>WiscVPN</h2>
+            <p><a href="https://it.wisc.edu/services/wiscvpn/" target="blank">https://it.wisc.edu/services/wiscvpn/</a></p>
+
+            <p>VPN is a virtual protected network that secures your online connection whenever you are on unsecure or public wireless. Free and simple to install.</p>
+            <p>Many campus services can only be accessed with VPN active on your device - for example, editing campus websites built with WordPress.</p>
+            <p>After installing the client, simply log in with your usual NetID and password and you're all set.</p>
+            <img class="border  rounded " src="images/06-vpn.png" alt="Screenshot of the VPN interface">
+
+
+            <hr>
+            <h2>Lynda.com</h2>
+            <p><a href="http://go.wisc.edu/lynda" target="blank">http://go.wisc.edu/lynda</a></p>
+
+            <p>Industry-leading online software and general skills training available at no cost to all UW-Madison students as well as faculty and staff.</p>
+            <p>The huge amount of content is a great resource but can make it hard to know where to start.</p>
+            <div class="sidebar"><h2>Helpful Tip:</h2>
+                If you are looking for a specific software program or topic, try searching for "[software] essentials", e.g. "photoshop essentials". The Essentials video series usually provide a good introduction to the programs without getting too complicated.</div>
+            <img class="border rounded  " src="images/07-lynda.jpg" alt="Screenshot of the Lynda.com homepage">
+        </section>
+        <!-- END SECTION: UW-Madison Services -->
+        <section class="topic">
+            <h1>Hardware and Software</h1>
+            <h2>DoIT Tech Store</h2>
+            <p><a href="http://techstore.doit.wisc.edu" target="blank">http://techstore.doit.wisc.edu</a></p>
+
+            <p>An authorized Apple and Dell retailer, plus great deals on accessories (external hard drives, USB sticks, headphones, mouse/keyboard, cases, laptop bags, etc.)</p>
+            <img src="images/08-techstore.jpg" alt="The DoIT Tech Store location at East Campus Mall" class="border shadow rounded center">
+
+            <hr>
+            <h2>Software Catalogue</h2>
+            <p><a href="http://software.wisc.edu" target="_blank">http://software.wisc.edu</a></p>
+            <p>Access to all of the software that UW-Madison students get for free. Includes:
+            </p>
+
+            <ul>
+                <li>Windows 10 Education version (helpful if you need to restore a broken laptop or are running Windows via virtual machine on a Mac)</li>
+
+                <li>Microsoft Office 365 (Word, Excel, Powerpoint, Outlook, OneNote)</li>
+
+                <li>MATLAB, R, Stata/SPSS, SAS</li>
+            </ul>
+
+            <p>Full-time employees of UW-Madison also receive access to download the Adobe Creative Cloud for use on UW-owned machines.</p>
+            <img class="border shadow rounded  " src="images/09-software.png" alt="Screenshot of the UW Software Catalog">
+
+            <hr>
+            <h2>WISC Software Purchase Portal</h2>
+            <p><a href="http://wiscsoftware.wisc.edu/" target="_blank">http://wiscsoftware.wisc.edu/</a></p>
+            <p>Software available at a discount to UW students. Adobe Creative Cloud is available for the student discount of $60/year ($5 per month). Office 365 is also available for purchase at a discount for graduating students.</p>
+            <img class="rounded border shadow  " src="images/10-wiscsoftware.png" alt="Screenshot of the WiscSoftware purchase page">
+            <hr>
+            <h2>UW-Madison Equipment Checkout</h2>
+            <p><a href="https://it.wisc.edu/services/equipment-checkout/" target="blank">https://it.wisc.edu/services/equipment-checkout/</a></p>
+
+            <p>UW offers a wide range of equipment for rent, including dual-boot Mac/PC laptops (complete with a the full Microsoft and Adobe suites), iPads, video cameras, projectors, and audio recorders.</p>
+            <img src="images/11-rental.png" alt="Screenshot of the UW equipment rental information website" class="rounded shadow border  ">
+
+        </section>
+        <!-- END SECTION: Hardware and Software -->
+
+        <section class="topic">
+            <h1>Academic Tools</h1>
+            <h2>Learn@UW</h2>
+            <p>Learn@UW is the name of the suite of digital tools that UW-Madison provides to help students, faculty, and staff succeed.</p>           
+            <p>It contains a number of different services that you may encounter during your time at UW-Madison. Here are a few of those tools.</p>
+            <img src="images/12a-learnuw.png" class="border shadow rounded " alt="Screenshot of Learn@UW homepage">
+            <hr>
+            <h2>Canvas</h2>
+            <p>As of June 2018, Canvas is the official Learning Management System (LMS) used by UW-Madison. It is used by instructors to post course content for their academic classes as well as by groups like STS for non-academic purposes.</p>
+            <p>The interface is pretty intuitive, but it can sometimes be hard to know where to find things in a course because instructors can customize them in a variety of ways One instructor might organize readings, videos, and quizzes into Modules by class topic, while another instructor might not use Modules at all. </p>
+            <p>If you ever need help figuring out how to use Canvas, <a href="https://canvas.wisc.edu/courses/13" target="_blank">the Canvas training course for Students</a> gives a good overview of how it works, and you can always schedule one-on-one help with Software Training for Students via our <a href="https://at.doit.wisc.edu/training/software-training-for-students/ask-a-trainer/" target="_blank">Ask A Trainer service</a>.</p>
+            <img src="images/12-canvas.png" class="shadow rounded border" alt="Screenshot of the Canvas courses page">
+            <hr>
+            <h3>Kaltura MediaSpace</h3>
+            <a href="https://mediaspace.wisc.edu">https://mediaspace.wisc.edu</a>
+            <p>Kaltura is the official video service supported on campus. If you ever need to host a video project created for class, Kaltura is the place to go.</p>
+            <img class="border shadow rounded" src="images/13-kaltura.png" alt="Screenshot of the Kaltura interface">
+            <h3>Piazza</h3>
+            <p>Piazza is a question-and-answer service that professors can use to foster discussion in their courses.</p>
+        </section>
+        <!-- END SECTION: Academic Services -->
+        <section class="topic">
+
+            <h1>Online Storage</h1>
+            <h2>Google Drive</h2>
+            <p><a href="http://drive.google.com" target="blank">http://drive.google.com</a></p>
+            <p>Unlimited file storage and sharing, with excellent real-time collaboration/editing plus easy sharing with anyone on or off campus. You can upload files from your local computer for storage in the cloud and access them anywhere you can get online.</p>
+            <p>Drive also features Google Apps (aka G Suite), which is Google's suite of productivity tools.</p>
+            <img class="border rounded shadow  float-right" src="images/14-drive.png" alt="Screenshot of Google Drive">
+
+            <p><em>Google Docs</em> is a fully featured word processor, akin to Microsoft Word.</p>
+            <p><em>Google Sheets</em> is Google's answer to Excel and is used for spreadsheets and working with data, graphs and charts.</p>
+            <p><em>Google Slides</em> is similar to PowerPoint and allows you to create presentation slides anywhere you have an internet connection.</p>
+
+            <p><strong>Pros:</strong> Excellent collaboration, unlimited storage, campus-supported, offers local file syncing</p>
+            <p><strong>Cons:</strong> must be online to use, is tied to your NetID (meaning your files are no longer available after graduation unless you manually copy them all and share with your personal Google account).</p>
+
+            <hr>
+            <h2>Box</h2>
+            <p><a href="http://uwmadison.app.box.com" target="blank">http://uwmadison.app.box.com</a></p>
+            <img src="images/15-box.png" alt="Screenshot of Box.com interface" class="border rounded shadow float-right ">
+
+            <p>Unlimited file storage and sharing, plus collaboration and online editing.</p>
+            <p><strong>Pros:</strong> No limit on storage, excellent file sharing and permission system, campus-supported, has local file syncing</p>
+            <p><strong>Cons:</strong> Collaboration features can be clunky, file syncing is sometimes inconsistent, not available after graduation</p>
+
+            <hr>
+            <h2>OneDrive</h2>
+            <p><a href="http://onedrive.live.com" target="blank">http://onedrive.live.com</a></p>
+            <img src="images/16-onedrive.png" alt="Screenshot of Microsoft One Drive" class="shadow rounded border  float-right">
+
+            <p>1TB of free storage that integrates directly with Office 365. </p>
+            <p><strong>Pros:</strong> Interfaces directly with Microsoft Office, campus-supported, </p>
+            <p><strong>Cons:</strong> Collaboration features not as streamlined as Google Drive, file syncing can be inconsistent, not available after graduation</p>
+
+            <hr>
+            <h2>Dropbox</h2>
+            <p><a href="http://www.dropbox.com" target="blank">http://www.dropbox.com</a></p>
+            <img src="images/17-dropbox.png" alt="Screenshot of Dropbox homescreen" class="rounded shadow border  float-right">
+
+            <p>2GB free, 1TB paid ($9.99/mo or $99/year). Not officially supported by UW, but you also won’t lose access after you graduate.</p>
+            <p><strong>Pros:</strong> Smooth integration with local syncing, easy to set up, available after graduation</p>
+            <p><strong>Cons:</strong> Only a small amount of free storage. </p>
+            <hr>
+            <div class="good-to-know center">
+                <h3>What Happens To My Data After I Graduate?</h3>
+                <p>Any data you save on campus-provided tools like Google Drive or Box will eventually be deleted after you leave the University. </p>
+                <p><a href="https://kb.wisc.edu/helpdesk/page.php?id=78565">This Knowledge Base article</a> provides more information about what happens to the digital files you store on campus-provided services after graduating or leaving UW-Madison and offers suggestions on ways to save your work.
+                </p>
+            </div>
+
+        </section>
+        <!-- END SECTION: Online Storage -->
+        <section class="topic">
+            <h1>Productivity</h1>
+            <h2>Wunderlist</h2>
+            <p><a href="https://www.wunderlist.com/" target="blank">https://www.wunderlist.com/</a></p>
+
+            <p>Task Management with a minimal interface. Allows you to group tasks into folders and subfolders, add notes, share tasks with others, and snooze notifications.</p>
+            <p>Can be used via the web, desktop client, or mobile device app.</p>
+            <img src="images/18-wunderlist.png" alt="Screenshot of Wunderlist interface" class="border rounded shadow">
+            <hr>
+            <h2>Todoist</h2>
+            <p><a href="https://en.todoist.com" target="blank">https://en.todoist.com</a></p>
+
+            <p>Similar to Wunderlist but with a slightly different workflow, which may appeal to some users.</p>
+            <p>The free version offers basic to-do list making and grouping, but many features are only available to Premium users.</p>
+            <img src="images/19-todoist.png" alt="Screenshot of Todoist" class="rounded shadow border ">
+
+            <hr>
+            <h2>Trello</h2>
+            <p><a href="http://www.trello.com" target="blank">http://www.trello.com</a></p>
+
+            <p>A simple-to-use tool for project management with a straightforward card-based interface that allows easy collaboration. Assign tasks and change status with simple drag-and-drop mechanics.</p>
+            <img src="images/21-trello.png" alt="Screenshot of Trello interface" class="shadow border  rounded">
+
+        </section>
+        <!-- END SECTION: Productivity -->
+        <section class="topic">
+            <h1>File/Link Management</h1>
+            <h2>Pushbullet</h2>
+            <p><a href="https://www.pushbullet.com/" target="blank">https://www.pushbullet.com/</a></p>
+
+            <p>Quickly send links and files from your browser to your phone/tablet/other devices (and vice versa).</p>
+            <p>After creating an account, install the browser extension (for Chrome, Firefox or Opera) and mobile app (for iOS and Android) and with a couple of clicks, you can send files, images, web pages, and more between devices with minimal fuss.</p>
+            <img src="images/20-pushbullet.gif" alt="Animated GIF of PushBullet sending a link from iPhone to browser">
+            <img src="images/20b-pushbullet2.gif" class="medium float-right" alt="Animated GIF of PushBullet sending a link to Google Chrome web browser">
+
+            <hr>
+            <h2>Pocket</h2>
+            <p><a href="https://getpocket.com" target="blank">https://getpocket.com</a></p>
+
+            <p>Save links and snapshots of web sites for later, with a single click. Tags and keywords make it easy to add articles to read for later, and the browser extension and mobile apps make Pocket work anywhere you find articles and websites. The Explore tab includes popular articles and websites that have been saved to Pocket by many users.</p>
+            <img src="images/22-pocket.png" class="rounded shadow border" alt="Screenshot of Pocket interface">
+
+            <hr>
+            <h2>goUW</h2>
+            <p><a href="https://go.wisc.edu/auth/netid/user/" target="blank">https://go.wisc.edu/auth/netid/user/</a></p>
+            <img src="images/23-gouw.png" class="rounded shadow border  " alt="Screenshot of GoUW interface">
+
+            <p>An easy way to shorten long URLs, this service is provided and officially supported by UW-Madison but does not let you customize links.</p>
+            <p>Especially helpful on flyers, tweets or anywhere space is a premium (and where you may want to avoid a long, ugly link) </p>
+
+            <hr>
+            <h2>Bitly</h2>
+            <p><a href="http://bit.ly" target="blank">http://bit.ly</a></p>
+            <p>An alternative way to shorten links, including the ability to assign custom, easy-to-remember URLs. </p>
+            <img src="images/24-bitly.png" class="rounded shadow border " alt="Screenshot of Bitly interface.">
+
+        </section>
+        <!-- END SECTION: File/Link Management -->
+        <section class="topic">
+            <h1>Note-Taking Software</h1>
+            <h2>Evernote</h2>
+            <p><a href="http://evernote.com" target="blank">http://evernote.com</a></p>
+
+            <p>Cloud-based note management software that easily syncs between multiple devices and allows tagging of notes to make organizing your notes easy.</p>
+            <img src="images/25-evernote.png" class="rounded shadow border" alt="Screenshot of Evernote">
+
+            <hr>
+            <h2>OneNote</h2>
+            <p><a href="http://onenote.live.com" target="blank">http://onenote.live.com</a></p>
+
+            <p>Similar to Evernote, this is Microsoft’s note-taking solution. Integrates seamlessly into Office 365 and lets you access notes anywhere.</p>
+            <img src="images/26-onenote.png" class="rounded shadow border" alt="Screenshot of Microsoft OneNote">
+
+            <hr>
+            <h2>Google Keep</h2>
+            <p><a href="http://keep.google.com" target="blank">http://keep.google.com</a></p>
+
+            <p>Google’s take on notes management. Set reminders and share notes with teams. </p>
+            <img src="images/27-keep.png" alt="Screenshot of the Google Keep interface" class="rounded shadow border">
+
+            <hr>
+            <h2>Scanner Pro</h2>
+            <p><a href="https://readdle.com/scannerpro">Apple App Store</a></p>
+            <p>A surprisingly effective document scanner that uses your iOS device’s camera to create and share scans/PDFs and even generate text from images using Optical Character Recognition.</p>
+            <p>iOS only.</p>
+            <div class="two-up">
+                <img src="images/29-scannerpro.png" class="rounded shadow border small" alt="Screenshot of Scanner Pro">
+                <img src="images/29b-scannerpro.JPG" class="rounded shadow border " alt="Screenshot of Scanner Pro">
+            </div>
+            <h2>CamScanner</h2>
+            <p><a href="https://play.google.com/store/apps/details?id=com.intsig.camscanner">Google Play Store</a></p>
+            <p>Similar to Scanner Pro, this app allows you to use your smartphone camera as a document scanner, with helpful editing features.</p>
+            <p>Android only.</p>
+
+        </section>
+        <!-- END SECTION: Note-taking Tools -->
+        <section class="topic">
+            <h1>Writing Tools and Citations</h1>
+            <h2>Scrivener</h2>
+            <p><a href="https://www.literatureandlatte.com/scrivener.php" target="blank">https://www.literatureandlatte.com/scrivener.php</a></p>
+
+            <p>An organizational tool that helps manage and streamline the writing process for long, multi-part papers. </p>
+            <p>Keep track of research documents, tag, sort, and rearrange parts of your paper without getting lost in the copy-paste trap in Word.</p>
+            <img src="images/30-scrivener.png" class="rounded shadow border" alt="Screenshot of Scrivener">
+
+            <hr>
+            <h2>Easybib</h2>
+            <p><a href="http://www.easybib.com/" target="blank">http://www.easybib.com/</a></p>
+
+            <p>Enter a book, website, article, or journal and automatically export citations in MLA, APA, Chicago formats and more.</p>
+            <p>Warning: the site may ask you to create an account; this is not necessary. You are able to use the citation creation tools without giving the company any personal information.</p>
+            <img src="images/31-easybib.png" class="rounded shadow border"  alt="Screenshot of EasyBib">
+
+            <hr>
+            <h2>EndNote</h2>
+            <p><a href="http://endnote.com" target="blank">http://endnote.com</a></p>
+
+            <p>Create research collections with references to articles, journals, books, etc. and easily export citations as a list or bibliography. Create reference groups and share them with collaborators. Integrates with Word.</p>
+            <p>This is a paid service, but UW-Madison students can log in and use the Basic level for free as long as they are students.</p>
+            <img src="images/32-endnote.png" class="rounded shadow border"  alt="Screenshot of EndNote">
+
+            <hr>
+            <h2>Zotero</h2>
+            <p><a href="http://zotero.org" target="blank">http://zotero.org</a></p>
+
+            <p>A free citation and research management tool with an add-ins for Word as well as connectors for Chrome, Firefox, and Safari. Save scholarly journals, research articles, blog posts and more into the preferred citation format of your choice right from your web browser. Later, export a list of your sources directly to Word with a few clicks. </p>
+            <img src="images/33-zotero.png"  class="rounded shadow border" alt="Screenshot of Zotero">
+
+            <hr>
+            <h2>UW-Madison Writing Center</h2>
+            <p><a href="https://writing.wisc.edu/" target="blank">https://writing.wisc.edu/</a></p>
+            <p>The Writing a free service available to all UW-Madison students offering writing help (editing, style, citations, project management, etc.) for any writing project (even things like grant proposals and applications).</p>
+            <img src="images/34-writing-center.png" class="rounded shadow border" alt="Screenshot of the UW Madison Writing homepage">
+            <h2>UW Libraries and Library Search</h2>
+            <p><a href="https://www.library.wisc.edu/" target="_blank">https://www.library.wisc.edu/</a></p>
+            <p><a href="https://search.library.wisc.edu/" target="_blank">https://search.library.wisc.edu/</a></p>
+            <p>The libraries on campus have a huge number of resources students can check out or reference - books, multimedia, video games, even LPs - and give you tools to make it easy to find what you need. You can also get real-time help from a librarian via chat, phone, or in-person.</p>
+            <p>The Catalog/Article/Database/Journal Search tools make it easy to find books and articles related to your research topic. You can filter by peer-reviewed, online access, full-text-only, and more, and retrieve many sources and databases right from your browser via NetID.</p>
+            <div class="two-up">
+                <img src="images/34a-library.png" class="border rounded shadow" alt="Screenshot of the Library homepage">
+                <img src="images/34b-search.png" class="border rounded shadow" alt="Screenshot of the Catalog Search">
+            </div>
+            
+
+        </section>
+        <!-- END SECTION: Writing Tools -->
+        <section class="topic">
+            <h1>Design and Graphics</h1>
+            <h2>Piktochart</h2>
+            <p><a href="http://piktochart.com" target="blank">http://piktochart.com</a></p>
+
+            <p>Easily create great-looking infographics, posters, and presentation materials. Projects created with free accounts feature a Piktochart logo at the bottom (which can be easily cropped of in the photo editor of your choice).</p>
+            <img src="images/57-piktochart.png" class="rounded shadow border" alt="Screenshot of Piktochart">
+            <hr>
+
+            <h2>Canva</h2>
+            <p><a href="http://canva.com" target="blank">http://canva.com</a></p>
+
+            <p>Canva makes it easy to produce great looking flyers, posters, business cards and more, using a simple interface and professionally designed templates.</p>
+            <img src="images/58-canva.png" class="rounded shadow border" alt="Screenshot of Canva.">
+            <h2>DesignLab</h2>
+            <p><a href="https://designlab.wisc.edu/" target="_blank">https://designlab.wisc.edu/</a></p>
+            <p>The DesignLab is a free service for UW-Madison students that offers design help for any project you may have - research posters, formatting long documents, student org flyers, video essays, and more.</p>
+            <p>Set up 1-on-1 appointments with the DesignLab consultants and learn how to make your work easy to understand and visually pleasing.</p>
+            <img src="images/40-designlab.png" class="border shadow rounded" alt="Screenshot of the DesignLab homepage">
+        </section>
+
+        <section class="topic">
+            <h1>Password Managers</h1>
+            <h2>LastPass</h2>
+            <p><a href="https://lastpass.com" target="blank">https://lastpass.com</a></p>
+
+            <p>Secure cloud-based password manager that lets you save login information, generate hard-to-crack passwords, and remotely log out and shut down access if your device is lost or stolen.</p>
+            <img src="images/35-lastpass.png" class="rounded shadow border" alt="Screenshot of LastPasss">
+            <hr>
+            <h2>1Password</h2>
+            <p><a href="https://1password.com" target="_blank">https://1password.com</a></p>
+            <p>Similar to LastPass but with local storage and support. Has native Mac and Windows apps, browser extensions for all major browsers, as well as apps for iOS and Android.</p>
+            <p>No free tier is available, but plans are available for as low as $3/month.</p>
+            <img src="images/36-1password.png" class="rounded shadow border" alt="Screenshot of 1Password">
+
+            <hr>
+            <h2>KeePass</h2>
+            <p><a href="https://keepass.info" target="blank">https://keepass.info</a></p>
+
+            <p>A free, open-source password manager. Local password storage only, but works for passwords outside web browsers as well.</p>
+            <img src="images/37-keepass.png" class="rounded shadow border" alt="Screenshot of KeePass">
+
+        </section>
+        <!-- END SECTION: Password Managers -->
+        <section class="topic">
+            <h1>Campus Life and Services for Students</h1>
+            <h2>Writing Center</h2>
+            <p><a href="https://writing.wisc.edu/" target="blank">https://writing.wisc.edu/</a></p>
+            <p>The Writing a free service available to all UW-Madison students offering writing help (editing, style, citations, project management, etc.) for any writing project (even things like grant proposals and applications).</p>
+            <img src="images/34-writing-center.png" class="rounded shadow border" alt="Screenshot of the UW Madison Writing homepage">
+
+            <hr>
+            <h2>Union Event Calendar and Today In The Union (TITU)</h2>
+            <p><a href="https://union.wisc.edu/events-and-activities/event-calendar/AdvSearchForm/" target="_blank">https://union.wisc.edu/events-and-activities/event-calendar/AdvSearchForm/</a></p>
+            <p><a href="http://union.ems.wisc.edu/VirtualEMS/CustomBrowseEvents.aspx?data=MeN0rP%2fRPNoJS2WjBImM5NV%2b64hv0ZxW" target="_blank">http://union.ems.wisc.edu/VirtualEMS/CustomBrowseEvents.aspx?data=MeN0rP%2fRPNoJS2WjBImM5NV%2b64hv0ZxW</a></p>
+
+            <p>Today in the Union is a great way to stay current with what's happening today at Memorial Union and Union South. Music performances, speakers, campus events, and more. </p>
+            <p>The Union Event Calendar lists upcoming events on a longer timescale.</p>
+            <div class="two-up">
+                <img src="images/38a-union-event.png"  class="rounded shadow border" alt="Screenshot of the Union Event Calendar">
+                <img src="images/38-titu.png"  class="rounded shadow border" alt="Screenshot of Today in the Union">
+            </div>
+            <hr>
+            <h2>UW-Madison Events Calendar</h2>
+            <p><a href="https://today.wisc.edu/" target="_blank">https://today.wisc.edu/</a></p>
+            <p>Similar to Today in the Union, the UW Events Calendar lists events from all around campus. Speakers, art exhibitions, training events (like STS Workshops) and more.</p>
+            <img src="images/39-events.png" class="rounded shadow border" alt="Screenshot of UW Events Calendar">
+            <hr>
+            <h2>Student Job Center</h2>
+            <p><a href="https://jobcenter.wisc.edu/" target="_blank"  >https://jobcenter.wisc.edu/</a></p>
+            <p>The easiest way to find a job on campus.</p>
+            <img src="images/40-student-job-center.png"  class="rounded shadow border" alt="Screenshot of the Student Job homepage">
+            <hr>
+            <h2>Multicultural Student Center</h2>
+            <p><a href="https://msc.wisc.edu/" target="_blank">https://msc.wisc.edu/</a></p>
+            <p>A great resource for connecting with, learning about, and getting involved with some of the diverse and underserved parts of the campus community. The MSC provides workshops on inclusivity, social justice, advocacy, and more, as well as resources for students from historically underrepresented groups on campus.</p>
+            <p>The MSC recently opened the <a href="https://www.wisc.edu/latinx/" target="_blank">Latinx Student Center</a> and Asian Pacific Islander Desi American Student Centers and is also the parent organization to the <a href="https://msc.wisc.edu/black-cultural-center/" target="_blank">Black Cultural Center</a>, which supports, advocates, and provides resources for students of African-American, Caribbean, Afro-Latinx, and African Diaspora descent.</p>
+            <div class="two-up">
+                <img src="images/41-msc.png"  class="rounded shadow border" alt="Screenshot from the Multicultural Student homepage">
+                <img src="images/42-black-student-center.png"  class="rounded shadow border " alt="Screenshot of the Black Cultural ">
+            </div>            
+
+            <hr>
+            <h2>McBurney Disability Resource Center</h2>
+            <p><a href="https://mcburney.wisc.edu/" target="_blank">https://mcburney.wisc.edu/</a></p>
+            <p>The McBurney is the campus source for ensuring accessibility, inclusivity, and equal opportunity for students of all ability levels. Physical accommodations, assistive technology, sign-language interpreters, note-takers and many other servicesare available for students and staff with disability-related needs.</p>
+            <p>Related: the <a href="https://accessibility.fpm.wisc.edu/">Disability Resource Guide</a> from Facilities Planning and Management (FPM) offers resources for building access and accomodation, emergency planning, snow removal, and more.</p>
+            <img src="images/43-mcburney.png"  class="rounded shadow border" alt="Screenshot of the McBurney homepage">
+            <hr>
+            <h2>Dining Hall Menus</h2>
+            <p><a href="http://menus.housing.wisc.edu/menus" target="_blank">http://menus.housing.wisc.edu/menus/</a></p>
+            <p>See what's for lunch without having to hoof it all the way to the dining hall.</p>
+            <img src="images/44-dining-hall-menus.png"  class="rounded shadow border" alt="Screenshot of the Dining Hall Menus site">
+            <hr>
+            <h2>Campus Maps</h2>
+            <p><a href="http://maps.wisc.edu" target="_blank">http://maps.wisc.edu</a></p>
+            <aside>A helpful list of <a href="https://accessibility.fpm.wisc.edu/campus-building-locations-entrances/" target="_blank">accessible entrances to campus buildings</a> is available from Facilities Planning and Management.
+            </aside>            
+            <p>Find your way to classes and campus events without having to wander aimlessly. Find buildings, bus routes, B Cycle locations, and more.</p>
+            <img src="images/44b-maps.png" class="rounded shadow border" alt="Screenshot of the Campus Maps">
+            <hr>
+            <h2>Marquee Movie Theater</h2>
+            <p><a href="https://union.wisc.edu/visit/union-south/the-marquee/" target="_blank">https://union.wisc.edu/visit/union-south/the-marquee/</a></p>
+            <p>A real-deal movie theater, right in Union South. Features 35mm and digital HD projection, and movie selection ranges from current run movies to classics.</p>
+            <p>Movies are chosen and provided free of charge by <a href="https://union.wisc.edu/get-involved/wud/film/" target="_blank">WUD Film</a> and are not limited to students - friends and family are welcome! </p>
+            <img src="images/45-marquee.png" class="rounded shadow border" alt="Screenshot of Union Marquee Theater homepage">
+            <hr>
+
+            <h2>WUD</h2>
+            <p><a href="https://union.wisc.edu/get-involved/wud/">https://union.wisc.edu/get-involved/wud/</a></p>
+            <p>Who decides which distinguished lecturers to invite, bands to book, movies to show, and events to schedule? You do! The Wisconsin Union Directorate (pronounced like '<em>wood</em>') is a student-run organization that programs all Wisconsin Union activities and events.</p>
+            <p>All students are invited to join and participate.</p>
+            <img src="images/46-WUD.png"  class="rounded shadow border" alt="Screenshot of the Wisconsin Union Directorate homepage">
+            <hr>
+            <h2>Software Training for Students</h2>
+            <p><a href="http://wisc.edu/sts">http://wisc.edu/sts</a></p>
+            <p>Free technology training workshops for all undergraduate and graduate students at UW-Madison. Attend free open-enrollment workshops, schedule custom training for your student organization, or get 1-on-1 help with your specific projects. </p>
+            <img src="images/50-sts.png"  class="rounded shadow border" alt="Screenshot of the Software Training for Students homepage">
+            <hr>
+                        <h2>UW-Madison Experts Database</h2>
+            <p><a href="https://experts.news.wisc.edu/" target="blank">https://experts.news.wisc.edu/</a></p>
+            <p>This list was assembled as a resource for media outlets to look up to faculty and staff members who are willing to speak as experts in their respective area of study, but it’s also a great place to start looking if you need an expert for reference.</p>
+            <a class="rounded shadow" href="https://experts.news.wisc.edu/" target="blank"><img src="images/05-experts.png" alt="Screenshot of the UW-Madison Experts database"></a>
+
+        </section>
+        <!-- END SECTION: Campus Life -->
+        <section class="topic">
+            <h1>Privacy and Advertising Management</h1>
+            <h2>AdBlock Plus</h2>
+            <p><a href="https://adblockplus.org/" target="blank">https://adblockplus.org/</a></p>
+
+            <p>Open-source plugin designed to block intrusive ads (including YouTube pre-roll ads), trackers, and general bad news. You can also block specific elements on a web page from displaying. </p>
+            <p>By default, AdBlock Plus allows what it calls "Acceptable Ads" and other advertising that it calls unobtrusive, but you can set it to block ALL advertising via ABP's preferences screen. </p>
+            <img src="images/51-adblockplus.png"  class="rounded shadow border" alt="Screenshot of AdBlock Plus">
+
+            <hr>
+            <h2>Privacy Badger</h2>
+            <p><a href="https://www.eff.org/privacybadger" target="blank">https://www.eff.org/privacybadger</a></p>
+
+            <p>An open-source browser extension that blocks trackers, cookies, and information-aggregation services from using your browsing data without your knowledge. </p>
+            <p>Gives a clear breakdown of whether each website's script is a tracker or not, and lets you enable/disable them individually. </p>
+            <img src="images/52-privacy-badger.png"  class="rounded shadow border " alt="Screenshot of Privacy Badger">
+
+            <hr>
+            <h2>HTTPS Everywhere</h2>
+            <p><a href="https://www.eff.org/https-everywhere" target="blank">https://www.eff.org/https-everywhere</a></p>
+
+            <p>This browser extension from the Electronic Freedom Foundation that automatically re-routes traffic to HTTPS (aka uses the encrypted channel) for websites that support HTTPS, which helps prevent people from snooping on your web browsing.</p>
+            <p>Won't encrypt your data on sites that don't have HTTPS security certificates installed, but it's an easy and hassle-free way to make your web browsing more secure where possible.</p>
+            <img src="images/53-https-everywhere.png" class="rounded shadow border " alt="Screenshot of HTTPS Everywhere">
+
+            <hr>
+            <h2>Quick Javascript Switcher</h2>
+            <p><a href="Chrome Extension" target="blank">Chrome Extension</a></p>
+
+            <p>Turns off Javascript (aka the source of most of those annoying “You’ve read all of your free articles for the month! Subscribe here!”, “Sign up for our newsletter!” popups, etc.) per site, with the click of a button. </p>
+            <p>Has the added benefit of disabling most advertising and tracking/surveillance tools that websites use, but can break some websites that need JavaScript to function. </p>
+            <img src="images/54-quick-js-switcher.png" class="rounded shadow border" alt="Screenshot of Quick JavaScript Switcher">
+
+        </section>
+        <!-- END SECTION: Privacy -->
+        <section class="topic">
+            <h1>Miscellaneous and Fun</h1>
+            <h2>Stayfocusd</h2>
+            <p><a href="Chrome Extension" target="blank">Chrome Extension</a></p>
+
+            <p>Limit or restrict access to non-productive web sites (like Facebook, Twitter, etc.) so you can focus on the things that you really should be doing, when you can’t quite bring yourself to do them yourself.</p>
+            <img src="images/56-stayfocusd.png"  class="rounded shadow border " alt="Screenshot of StayFocusd">
+            <hr>
+            <h2>10 Minute Mail</h2>
+            <p><a href="http://10minutemail.com" target="_blank">http://10minutemail.com</a></p>
+
+            <p>Create a temporary email address that expires after 10 minutes (or extend it in increments of 10 minutes as needed). Helpful when a site or service requires you to create an account to use it or try it out, but you don’t want to get their spam every 4 days for all of eternity.</p>
+            <img src="images/57-tenminutemail.png" class="rounded shadow border " alt="Screenshot of 10 Minute Mail">
+
+            <hr>
+            <h2>Grammarly</h2>
+            <p><a href="https://www.grammarly.com/" target="blank">https://www.grammarly.com/</a></p>
+
+            <p>Avoid common grammar mistakes, incorrect word choice (loose vs. lose, their/they’re/there, your/you’re etc.) when writing email, social media posts, messages, etc.</p>
+            <img src="images/55-grammarly.png" class="rounded shadow border" alt="Screenshot of Grammarly">
+
+            <hr>
+            <h2>Rainy Mood</h2>
+            <p><a href="http://rainymood.com/" target="blank">http://rainymood.com/</a></p>
+
+            <p>This simple website offers the ambient noise of a rainstorm to help relax and focus. Can be combined with YouTube videos for maximum effect.</p>
+            <img src="images/59-rainymood.png" class="rounded shadow border" alt="Screenshot of Rainy Mood homepage">
+
+            <hr>
+            <h2>Honey</h2>
+            <p><a href="https://www.joinhoney.com/" target="blank">https://www.joinhoney.com/</a></p>
+
+            <p>Automatically find and apply coupons at checkout at dozens of popular e-commerce sites.</p>
+            <img src="images/60-honey.png" class="rounded shadow border" alt="Screenshot of Honey">
+
+            <hr>
+            <h2>RetailMeNot</h2>
+            <p><a href="https://www.retailmenot.com/" target="blank">https://www.retailmenot.com/</a></p>
+
+            <p>Similar to Honey, a great way to find retail deals both online and in-store.</p>
+            <img src="images/61-retailmenot.png" class="rounded shadow border" alt="Screenshot of RetailMeNot">
+
+            <hr>
+            <h2>Learn Music with Ableton</h2>
+            <p><a href="https://learningmusic.ableton.com/" target="blank">https://learningmusic.ableton.com/</a></p>
+
+            <p>This is a novel but in-depth introduction to how music works, from basics like beats and melody to more complex topics like polyrhythms. Easy to follow for any skill level - no previous music experience required. </p>
+            <img src="images/62-ableton.png" class="rounded shadow border" alt="Screenshot of Learning Music with Ableton">
+
+            <hr>
+            <h2>MediaStinger</h2>
+            <p><a href="http://www.mediastinger.com/" target="blank">http://www.mediastinger.com/</a></p>
+
+            <p>A site that tells you whether the movie you’re watching has any special scenes or after-credits moments</p>
+            <img src="images/63-movie-stinger.png" class="rounded shadow border" alt="Screenshot of Movie Stinger homepage">
+        </section>
+        <!-- END SECTION: Fun -->
+    </body>
+
+</html>
